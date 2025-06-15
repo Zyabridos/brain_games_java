@@ -10,13 +10,14 @@ public class Engine {
         Scanner scanner = new Scanner(System.in);
 
         for (Round round : rounds) {
-            System.out.println("Question: " + round.question);
+            System.out.println("Question: " + round.getQuestion());
             String userAnswer = scanner.next();
 
-            if (userAnswer.equals(round.correctAnswer)) {
+            if (userAnswer.equals(round.getCorrectAnswer())) {
                 System.out.println("Correct!");
             } else {
-                System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was '" + round.correctAnswer + "'.");
+                System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was '"
+                        + round.getCorrectAnswer() + "'.");
                 System.out.println("Let's try again, " + userName + "!");
                 return;
             }

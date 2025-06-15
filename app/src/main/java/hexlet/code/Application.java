@@ -22,17 +22,23 @@ public class Application {
         Scanner scanner = new Scanner(System.in);
         String choice = scanner.next();
 
-        if (choice.equals("0")) return;
+        if (choice.equals("0")) {
+            return;
+        }
 
         String userName = Cli.greet();
 
         switch (choice) {
-            case "1" -> {}
+            case "1" -> {
+                // Greet only
+            }
             case "2" -> Engine.run(IsEven.getRules(), IsEven.prepareRounds(), userName);
             case "3" -> Engine.run(Calc.getRules(), Calc.prepareRounds(), userName);
             case "4" -> Engine.run(GCD.getRules(), GCD.prepareRounds(), userName);
             case "5" -> Engine.run(Progression.getRules(), Progression.prepareRounds(), userName);
-            case "6" -> {Engine.run(Prime.getRules(), Prime.prepareRounds(), userName);}
+            case "6" -> {
+                Engine.run(Prime.getRules(), Prime.prepareRounds(), userName);
+            }
             default -> System.out.println("Invalid option.");
         }
 

@@ -5,6 +5,12 @@ import hexlet.code.Round;
 import hexlet.code.Utils;
 
 public class Calc {
+    private static final int MAX_RANDOM_NUMBER = 50;
+    private static final int MIN_DIVISOR = 1;
+    private static final int MAX_DIVISOR = 10;
+    private static final int MIN_RESULT_FOR_DIVISION = 2;
+    private static final int OPERATOR_COUNT = 3;
+
     public static String getRules() {
         return "What is the result of the expression?";
     }
@@ -19,34 +25,32 @@ public class Calc {
 
             if (operator.equals("/")) {
                 do {
-                    second = Utils.generateRandomNumber(1, 10);
-                    int result = Utils.generateRandomNumber(2, 10);
+                    second = Utils.generateRandomNumber(MIN_DIVISOR, MAX_DIVISOR);
+                    int result = Utils.generateRandomNumber(MIN_RESULT_FOR_DIVISION, MAX_DIVISOR);
                     first = result * second;
                 } while (second == 0);
             } else {
-                first = Utils.generateRandomNumber(0, 50);
-                second = Utils.generateRandomNumber(0, 50);
+                first = Utils.generateRandomNumber(0, MAX_RANDOM_NUMBER);
+                second = Utils.generateRandomNumber(0, MAX_RANDOM_NUMBER);
             }
 
             String question = first + " " + operator + " " + second;
-            int result;
-
-            switch (operator) {
-                case "+" -> result = first + second;
-                case "-" -> result = first - second;
-                case "*" -> result = first * second;
+            int result = switch (operator) {
+                case "+" -> first + second;
+                case "-" -> first - second;
+                case "*" -> first * second;
+                case "/" -> first / second;
                 default -> throw new IllegalStateException("Unexpected operator: " + operator);
-            }
+            };
 
-            String correctAnswer = Integer.toString(result);
-            rounds[i] = new Round(question, correctAnswer);
+            rounds[i] = new Round(question, Integer.toString(result));
         }
 
         return rounds;
     }
 
     private static String generateOperator() {
-        int n = Utils.generateRandomNumber(0, 2);
+        int n = Utils.generateRandomNumber(0, OPERATOR_COUNT - 1);
         return switch (n) {
             case 0 -> "+";
             case 1 -> "-";
