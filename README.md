@@ -13,7 +13,6 @@ It includes five games, each consisting of three rounds.
 In order to setup the game, a player should run following commands in the command line:
 ```bash
 $ git clone https://github.com/Zyabridos/brain_games_java
-$ cd app
 $ make run-dist
 ```
 
@@ -34,25 +33,14 @@ The list of available games is shown below:
 ### 🧠 brain-even
 A game where the player must determine if a given number is even or not.
 
-To start: brain-even
-
 ### ➕ brain-calc
-A game where the player is shown a mathematical expression and must calculate the result. 
-
-To start: brain-calc
+A game where the player is shown a mathematical expression and must calculate the result.
 
 ### 🔢 brain-gcd
-A game where the player must find the greatest common divisor (GCD) of two given numbers. 
-
-To start: brain-gcd
+A game where the player must find the greatest common divisor (GCD) of two given numbers.
 
 ### 🔁 brain-progression
-A game where the player sees an arithmetic progression with one number missing and must find the missing number. 
-
-To start: brain-progression
+A game where the player sees an arithmetic progression with one number missing and must find the missing number.
 
 ### 🔍 brain-prime
-A game where the player must determine whether a given number is a prime number. 
-
-To start: brain-prime
-
+A game where the player must determine whether a given number is a prime number.
