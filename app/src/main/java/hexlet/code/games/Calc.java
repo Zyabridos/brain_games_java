@@ -35,7 +35,6 @@ public class Calc {
                 case "+" -> result = first + second;
                 case "-" -> result = first - second;
                 case "*" -> result = first * second;
-                case "/" -> result = first / second;
                 default -> throw new IllegalStateException("Unexpected operator: " + operator);
             }
 
@@ -47,12 +46,11 @@ public class Calc {
     }
 
     private static String generateOperator() {
-        int n = Utils.generateRandomNumber(0, 3);
+        int n = Utils.generateRandomNumber(0, 2);
         return switch (n) {
             case 0 -> "+";
             case 1 -> "-";
-            case 2 -> "*";
-            default -> "/";
+            default -> "*";
         };
     }
 }
