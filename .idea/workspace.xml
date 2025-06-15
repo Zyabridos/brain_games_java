@@ -74,6 +74,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/code" />
       <recent name="$PROJECT_DIR$/app" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -110,7 +112,7 @@
       <updated>1749997281599</updated>
       <workItem from="1749997283252" duration="7851000" />
       <workItem from="1750009344782" duration="2503000" />
-      <workItem from="1750011891625" duration="296000" />
+      <workItem from="1750011891625" duration="975000" />
     </task>
     <servers />
   </component>
