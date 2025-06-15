@@ -8,4 +8,8 @@ public class Utils {
     public static int generateRandomNumber(int max) {
         return RANDOM.nextInt(max + 1);
     }
+
+    public static int generateRandomNumber(int min, int max) {
+        return min + RANDOM.nextInt(max - min + 1);
+    }
 }

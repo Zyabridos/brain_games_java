@@ -19,9 +19,9 @@ public class Calc {
 
             if (operator.equals("/")) {
                 do {
-                    second = Utils.generateRandomNumber(1, 10); // не 0
+                    second = Utils.generateRandomNumber(1, 10);
                     int result = Utils.generateRandomNumber(2, 10);
-                    first = result * second; // гарантирует целое деление
+                    first = result * second;
                 } while (second == 0);
             } else {
                 first = Utils.generateRandomNumber(0, 50);
@@ -47,7 +47,7 @@ public class Calc {
     }
 
     private static String generateOperator() {
-        int n = Utils.generateRandomNumber(0, 3); // 0–3
+        int n = Utils.generateRandomNumber(0, 3);
         return switch (n) {
             case 0 -> "+";
             case 1 -> "-";
