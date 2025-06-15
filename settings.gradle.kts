@@ -1,1 +1,0 @@
-rootProject.name = "btain_games_kava"

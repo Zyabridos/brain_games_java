@@ -9,6 +9,14 @@
 This project was created to play a collection of simple mathematical games in the console.
 It includes five games, each consisting of three rounds.
 
+## Setup
+In order to setup the game, a player should run following commands in the command line:
+```bash
+$ git clone https://github.com/Zyabridos/brain_games_java
+$ cd app
+$ make run-dist
+```
+
 The main rule is the same for all games:
 To win, the player must give three correct answers in a row.
 Any wrong answer ends the game immediately.
@@ -17,3 +25,34 @@ Each game displays its specific rules after greeting the player.
 ## Prerequisites
 - Java (JDK 17 or later recommended)
 - Make (for using Makefile to build and run the project)
+
+## 🎮 How to Play
+To play a game, simply type the name of the game you want to play in the console.
+Do not use quotation marks.
+The list of available games is shown below:
+
+### 🧠 brain-even
+A game where the player must determine if a given number is even or not.
+
+To start: brain-even
+
+### ➕ brain-calc
+A game where the player is shown a mathematical expression and must calculate the result. 
+
+To start: brain-calc
+
+### 🔢 brain-gcd
+A game where the player must find the greatest common divisor (GCD) of two given numbers. 
+
+To start: brain-gcd
+
+### 🔁 brain-progression
+A game where the player sees an arithmetic progression with one number missing and must find the missing number. 
+
+To start: brain-progression
+
+### 🔍 brain-prime
+A game where the player must determine whether a given number is a prime number. 
+
+To start: brain-prime
+
