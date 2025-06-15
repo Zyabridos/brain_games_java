@@ -2,6 +2,8 @@ package hexlet.code;
 
 import hexlet.code.games.IsEven;
 import hexlet.code.games.Calc;
+import hexlet.code.games.GCD;
+
 import java.util.Scanner;
 
 public class Application {
@@ -10,6 +12,7 @@ public class Application {
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
+        System.out.println("4 - GCD");
         System.out.println("0 - Exit");
 
         Scanner scanner = new Scanner(System.in);
@@ -23,6 +26,7 @@ public class Application {
             case "1" -> {}
             case "2" -> Engine.run(IsEven.getRules(), IsEven.prepareRounds(), userName);
             case "3" -> Engine.run(Calc.getRules(), Calc.prepareRounds(), userName);
+            case "4" -> Engine.run(GCD.getRules(), GCD.prepareRounds(), userName);
             default -> System.out.println("Invalid option.");
         }
 
