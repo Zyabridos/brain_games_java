@@ -3,6 +3,7 @@ package hexlet.code;
 import hexlet.code.games.IsEven;
 import hexlet.code.games.Calc;
 import hexlet.code.games.GCD;
+import hexlet.code.games.Progression;
 
 import java.util.Scanner;
 
@@ -27,6 +28,7 @@ public class Application {
             case "2" -> Engine.run(IsEven.getRules(), IsEven.prepareRounds(), userName);
             case "3" -> Engine.run(Calc.getRules(), Calc.prepareRounds(), userName);
             case "4" -> Engine.run(GCD.getRules(), GCD.prepareRounds(), userName);
+            case "5" -> Engine.run(Progression.getRules(), Progression.prepareRounds(), userName);
             default -> System.out.println("Invalid option.");
         }
 
