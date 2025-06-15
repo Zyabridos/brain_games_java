@@ -18,7 +18,7 @@ dependencies {
 }
 
 application {
-    mainClass.set("app.Application")
+    mainClass.set("hexlet.code.Application")
 }
 
 tasks.test {
