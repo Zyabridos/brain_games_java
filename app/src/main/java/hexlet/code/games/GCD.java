@@ -8,8 +8,10 @@ public class GCD {
     private static final int MAX_RANDOM_NUMBER = 50;
 
     public static int findGCD(int a, int b) {
-        if (b == 0) { return a; }
-        return findGCD(b,a % b);
+        if (b == 0) {
+            return a;
+        }
+        return findGCD(b, a % b);
     }
 
     public static String getRules() {

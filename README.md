@@ -6,8 +6,13 @@
 
 
 ## Project Description
-This project was created to play a collection of simple mathematical games in the console.
-It includes five games, each consisting of three rounds.
+A CLI-based collection of five simple math games, created to practice Java fundamentals and logic.
+
+Each game consists of three rounds, and the goal is to answer three questions correctly in a row.
+One mistake ends the game immediately.
+
+Game-specific rules are shown **after you enter the game number**.
+
 
 ## Setup
 In order to setup the game, a player should run following commands in the command line:
@@ -26,21 +31,55 @@ Each game displays its specific rules after greeting the player.
 - Make (for using Makefile to build and run the project)
 
 ## 🎮 How to Play
-To play a game, simply type the name of the game you want to play in the console.
-Do not use quotation marks.
-The list of available games is shown below:
+After starting the app, you will see a menu:
 
-### 🧠 brain-even
-A game where the player must determine if a given number is even or not.
+```mathematica
+Please enter the game number and press Enter.
+1 - Greet
+2 - Even
+3 - Calc
+4 - GCD
+5 - Progression
+6 - Prime
+0 - Exit
+Enter a number to start a game.
+```
+## 🕹️ Available Games
+```bash
+2 - Even – brain-even
+```
+Determine whether the given number is even.
+Answer "yes" if the number is even, otherwise answer "no".
 
-### ➕ brain-calc
-A game where the player is shown a mathematical expression and must calculate the result.
+```bash
+3 - Calc – brain-calc
+```
+Calculate the result of a random arithmetic expression.
+Operators: +, -, *.
 
-### 🔢 brain-gcd
-A game where the player must find the greatest common divisor (GCD) of two given numbers.
+```bash
+4 - GCD – brain-gcd
+```
+Find the greatest common divisor of two given numbers.
 
-### 🔁 brain-progression
-A game where the player sees an arithmetic progression with one number missing and must find the missing number.
+```bash
+5 - Progression – brain-progression
+```
+Find the missing number in an arithmetic progression.
 
-### 🔍 brain-prime
-A game where the player must determine whether a given number is a prime number.
+```bash
+6 - Prime – brain-prime
+```
+Decide whether the given number is prime.
+Answer "yes" if it’s prime, otherwise "no".
+
+```bash
+1 - Greet
+```
+Just shows a greeting with your name (no game).
+
+```bash
+Exit
+```
+Choose 0 at any time to quit the application.
+
